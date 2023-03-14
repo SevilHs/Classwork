@@ -1,0 +1,36 @@
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+section{
+    height: 100%;
+    border: 2px solid black;
+}
+.big{
+    display: flex;
+}
+.box{
+    width: 100%;
+    height: 70px;
+    margin: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+}
+.box:first-child{
+    background-color: aqua;
+}
+.box:nth-child(2){
+    background-color: blueviolet;
+}
+.box:nth-child(3){
+    background-color: rgb(187, 92, 9);
+}
+.box:nth-child(4){
+    background-color: rgb(79, 253, 40);
+}
+.box:nth-child(5){
+    background-color: rgb(12, 83, 21);
+}
