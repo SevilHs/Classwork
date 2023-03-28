@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.none{
+    display: none;
+}
+.sec1{
+    height: 100vh;
+    border: 2px solid darkblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1.3s;
+}
+.box:first-child{
+    background-color: brown;
+    
+}
+.box:nth-child(2){
+    background-color: darkolivegreen;
+}
+.box:nth-child(3){
+    background-color: darkslateblue;
+}
+.box:nth-child(4){
+    background-color: darkgoldenrod;
+}
+
+.box:first-child:hover{
+    transform: scale(1.2);
+}
+.box:nth-child(2):hover{
+    transform: translate(40%,-90%);
+}
+.box:nth-child(3):hover{
+    transform: rotateY(360deg);
+}
+.box:nth-child(4):hover{
+    transform: skew(30deg);
+}
+.box:hover .none{
+    display: block;
+}
+.box:hover .visible{
+    display: none;
+}
+
+
+
+.sec2{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    width: 200px;
+    animation-name: earth;
+    animation-iteration-count: infinite;
+}
+.img2{
+    width: 100px;
+    margin: 100px;
+}
+
+.sec2 div img{
+    border-radius: 50%;
+}
+.all{
+     animation-name: all;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes earth{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes all{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
