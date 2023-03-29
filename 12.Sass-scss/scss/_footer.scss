@@ -1,0 +1,20 @@
+footer{
+        background-color: lightblue;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .footer{
+                display: flex;
+                column-gap: 270px;
+                    div{
+                        ul{
+                            display: grid;
+                            gap: 10px;
+                            li{
+                            }
+                            
+                        }
+                    }
+            }
+}
