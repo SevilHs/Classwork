@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;0,800;1,500;1,600;1,800&family=Kanit:wght@300&family=Raleway:wght@200&family=Source+Sans+Pro:ital@1&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(./img/bg.jpg);
+  height: 100vh;
+}
+header nav {
+  padding: 2% 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li a {
+  color: white;
+  padding: 5px 0;
+  position: relative;
+}
+header nav ul li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: brown;
+  bottom: 0;
+  left: 0;
+}
+header nav ul li img {
+  width: 70px;
+}
+
+section .all {
+  display: flex;
+}
+section .all .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 25px;
+}
+section .all .left h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
+}
+section .all .left h4 {
+  text-decoration: line-through;
+  color: rgb(155, 126, 87);
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+section .all .left a {
+  color: white;
+  background-color: rgb(155, 126, 87);
+  border: none;
+  padding: 15px 25px;
+  transition: 1.2s;
+}
+section .all .left a:hover {
+  transform: scale(1.2);
+  background-color: ghostwhite;
+  color: rgb(155, 126, 87);
+}
+section .all .right {
+  width: 50%;
+}
+section .all .right img {
+  width: 470px;
+  transform: translate(37%, 38%);
+  transition: 1.3s;
+}
+section .all .right img:hover {
+  transform: translate(37%, 60%);
+}/*# sourceMappingURL=main.css.map */

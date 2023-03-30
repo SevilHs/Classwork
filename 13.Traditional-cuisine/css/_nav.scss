@@ -1,0 +1,32 @@
+header{
+    background-image: url(./img/bg.jpg);
+    height: 100vh;
+    nav{
+        padding: 2% 0;
+        ul{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                a{
+                    color: white;
+                    padding: 5px 0;
+                    position: relative;
+                    &:hover::after{
+                        position: absolute;
+                        content: "";
+                        width: 25px;
+                        height: 3px;
+                        background-color: brown;
+                        bottom: 0;
+                        left: 0;
+                    }
+                   
+                } 
+                img{
+                        width: 70px;
+                    }
+            }
+        }
+    }
+}
