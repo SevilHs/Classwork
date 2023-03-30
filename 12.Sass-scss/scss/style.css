@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  background-color: black;
+  padding: 25px 45px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  transition: 1.2s;
+}
+header nav ul li:hover {
+  transform: scale(1.5);
+}
+header nav ul li a {
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 1.2s;
+}
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+header nav ul li i {
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+header nav ul li i:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: lightblue;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer {
+  display: flex;
+  -moz-column-gap: 270px;
+       column-gap: 270px;
+}
+footer .footer div ul {
+  display: grid;
+  gap: 10px;
+}
+section {
+  height: 100vh;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .boxes {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+section .boxes .box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: 2px dotted black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.2s;
+}
+section .boxes .box:hover {
+  transform: rotateX(360deg);
+}
+section .boxes .box:hover h1 {
+  display: none;
+}
+section .boxes .box:hover img {
+  display: block;
+}
+section .boxes .box img {
+  display: none;
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */
