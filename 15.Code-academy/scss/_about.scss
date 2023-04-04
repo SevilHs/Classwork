@@ -1,0 +1,46 @@
+.about{
+    .about-all{
+        .about-text{
+            width: 50%;
+            margin-top: 15%;
+            img{
+                margin: 25px 0;
+            }
+        }
+        .about-practical{
+            margin: 70px 0;
+            .rowpractical{
+                row-gap: 60px;
+                .colpractical{
+                    display: flex;
+                    column-gap: 35px;
+                    img{
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .about{
+        .about-all{
+            .about-text{
+                text-align: center;
+                width: 100%;
+            }
+            .about-practical{
+                .rowpractical{
+                    text-align: center;
+                    .colpractical{
+                        flex-direction: column;
+                        img{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

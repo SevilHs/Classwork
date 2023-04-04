@@ -1,0 +1,26 @@
+.progress{
+    background-image: url(./progressimg.png);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    div{ 
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.438);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: white;
+            }
+    }
+}
+@media only screen and (max-width:767px) {
+    .progress{
+        height: 70vh;
+        div{
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
+}
