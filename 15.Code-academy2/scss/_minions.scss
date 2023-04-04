@@ -1,0 +1,80 @@
+.minions{
+    padding: 3%;
+    .minions-all{
+        .minions-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            h1{
+                position: relative;
+            padding-bottom: 15px;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 80%;
+                height: 2px;
+                background-color: yellow;
+                left: 10px;
+                bottom: 0;
+            }
+            }
+            
+        }
+        .minions-box{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            .rowminions{
+                display: flex;
+                column-gap: 10px;
+                flex-wrap: nowrap;
+                .colminions{
+                    border: 2px dotted black;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+                .colminions:nth-child(odd){
+                    background-color: rgb(172, 33, 160);
+                     &:hover{
+                        background-image: url(./minion3.png);
+                        background-size: cover;
+                        animation-name: minion;
+                        animation-duration: 1s;
+                        
+                        h3{
+                            display: none;
+                        }
+                     }
+                }
+                .colminions:nth-child(even){
+                    background-color: rgb(37, 110, 41);
+                    background-position: center;
+                    &:hover{
+                        background-image: url(./minion2.png);
+                        animation-name: minion;
+                        animation-duration: 1s;
+                        h3{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes minion {
+    0%{
+        transform: rotateX(0);
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}

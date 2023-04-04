@@ -1,0 +1,101 @@
+#contact{
+    border: 2px solid black;
+    .contact{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 10%;
+        padding: 15% 5%;
+        .contact-left{
+            width: 50%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            h4{
+                position: absolute;
+                font-weight: 700;
+                left: 0;
+                top: 0;
+            }
+            p{
+                font-size: 50px;
+                color: rgb(70, 68, 68);
+                font-weight: 700;
+                position:absolute;
+                right: 0;
+            }
+        }
+        .contact-right{
+            width: 50%;
+            
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                .name-surname{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .name{
+                        width: 40%;
+                    }
+                    .surname{
+                        
+                        width: 55%;
+                    }
+                }
+
+               .same{
+                    padding: 13px;
+                    border: 1px dashed #373a3c;
+                    outline: none;
+               }
+                .text-select{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .textarea{
+                        padding: auto 15px;
+                        resize: none;
+                        width: 80%;
+                        border: 1px dashed #373a3c;
+                        box-sizing: border-box;
+                        &::placeholder{
+                        color: red;
+                        }
+                    }
+                }
+                #select2{
+                    width: 100%;
+                }
+                .submitbtn{
+                    width: 100%;
+                    background-color: goldenrod;
+                    outline: none;
+                    border: none;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    #contact{
+        .contact{
+            display: flex;
+            flex-direction: column;
+            .contact-left{
+                width: 100%;
+                margin-bottom: 100px;
+            }
+            .contact-right{
+                width: 100%;
+            }
+        }
+
+    }
+}
